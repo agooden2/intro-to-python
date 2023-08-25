@@ -1,61 +1,76 @@
-# Session 2 Exercises
+# # Session 2 Exercises
 
-## Section A
-# 1. Create two variables that hold the width and height of a rectangle, work out and store the area in a third variable. 
-# Print out the string: `Rectangle of width <x> and height <y> has an area of <area>`.
+# ## Section A
+# # 1. Create two variables that hold the width and height of a rectangle, work out and store the area in a third variable.
+# # Print out the string: `Rectangle of width <x> and height <y> has an area of <area>`.
+width = 5
+height = 10
+area = width * height
+print("Rectangle of width " + str(width) + " and height " + str(height) +
+      " has an area of " + str(area))
 
+# # 2. (Write code that prints the length of the string, 'python'.
+print(len("python"))
 
+# # 3. Print out the first and third letter of the word 'python'.
+print("python"[0])
+print("python"[2])
 
-# 2. Write code that prints the length of the string, 'python'.
+# # 4. Ask the user to enter their name, and print out `Hello, <name>`.
+name = input("What is your name? ")
+print("Hello, " + name + "!")
 
+# # 5. Ask the user to enter their age, tell them how old they will be in 15 years time.
+age = int(input("Enter your age: "))
+print("In 15 years time, you will be " + str(15 + age) + " years old")
 
+# # 6. Combine the two input statements above and print out the message `Hello, <name>, you are currently <age> years old.
+# #   In 15 years time you will be <age_in_15_years_time>`.
 
-# 3. Print out the first and third letter of the word 'python'.
+print("Hello, " + name + " you are currently " + str(age) +
+      " years old.\nIn 15 years time, you will be " + str(15 + age) +
+      " years old.")
 
+# # 7. Ask the user to enter their hometown, print it out in uppercase letters.
+hometown = input("Enter your hometown: ")
+print(hometown.upper())
 
+# # 8. Ask the user to enter their favourite colour and find out the length of the colour they input.
+fave_colour = input("Enter your favourite colour: ")
+length_of_fave_colour = len(fave_colour)
 
-# 4. Ask the user to enter their name, and print out `Hello, <name>`.
+# # 9. Ask the user to enter the weather and the month. Print out the string, `It is <month> and it is <weather> today`.
+weather = input("What is the weather like? ")
+month = input("What month is it?")
+print("It is " + month + " and the weather is " + weather + " today ")
 
+# # 10. Ask the user to enter 5 different temperatures and the month. Work out the average temperature and print out the string:
+# #   `It is <month> and the average temperature is <average_temperature> degrees celsius`.
+temp1 = int(input("Enter temperature 1: "))
+temp2 = int(input("Enter temperature 2: "))
+temp3 = int(input("Enter temperature 3: "))
+temp4 = int(input("Enter temperature 4: "))
+temp5 = int(input("Enter temperature 5: "))
+average_temp = (temp1 + temp2 + temp3 + temp4 + temp5) / 5
+month2 = input("Enter the month: ")
+print("It is " + month2 + "and the average temperature is " + average_temp +
+      " degrees celsius")
 
+# # 11. Print out the above sentence but make the month upper case.
+print("It is " + month2.upper() + "and the average temperature is " + str(average_temp) + " degrees celsius")
 
-# 5. Ask the user to enter their age, tell them how old they will be in 15 years time.
+# # 12. Create a variable that holds your favourite animals and print it out.
+# #    Make sure the animals are all on different lines and tabbed.
+fave_animals = "Giraffe\nAnt\nDeer"
+print(fave_animals)
 
+# # 13. Ask the user to enter their name as well as a number.
+# #    Print out the uppercase character at that position in the string.
+name = input("Enter your name: ")
+num = int(input("Enter a number: "))
+print(name[num].upper())
 
+# # 14. Slice the string with steps of 2, excluding the first and last characters of the string "WelcometoPython".
+string = "WelcometoPython"
+print(string[1:-1:2])
 
-# 6. Combine the two input statements above and print out the message `Hello, <name>, you are currently <age> years old. 
-#   In 15 years time you will be <age_in_15_years_time>`.
-
-
-
-# 7. Ask the user to enter their hometown, print it out in uppercase letters.
-
-
-
-# 8. Ask the user to enter their favourite colour and find out the length of the colour they input.
-
-
-
-# 9. Ask the user to enter the weather and the month. Print out the string, `It is <month> and it is <weather> today`.
-
-
-
-# 10. Ask the user to enter 5 different temperatures and the month. Work out the average temperature and print out the string: 
-#   `It is <month> and the average temperature is <average_temperature> degrees celsius`.
-
-
-
-# 11. Print out the above sentence but make the month upper case.
-
-
-
-# 12. Create a variable that holds your favourite animals and print it out. 
-#    Make sure the animals are all on different lines and tabbed.
-
-
-
-# 13. Ask the user to enter their name as well as a number. 
-#    Print out the uppercase character at that position in the string.
-
-
-
-# 14. Slice the string with steps of 2, excluding the first and last characters of the string "WelcometoPython".

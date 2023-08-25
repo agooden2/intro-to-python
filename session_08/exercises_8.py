@@ -8,15 +8,25 @@
 
 ## Section A
 # 1. Read the file 'jabberwocky.txt' and print its content to the screen.
-
+# f = open("text_files/jabberwocky.txt", "r")
+# print(f.read())
 
 
 # 2. Read the file 'austen.txt' and print the amount of lines in the file.
+# f = open("text_files/austen.txt", "r")
+# line_count=0
+# for line in f:
+#   line_count+=1
+# print(line_count)
 
 
 
 # 3. Each line of the file 'numbers.txt' contains a number, write a script to add up all the values in the file.
-
+# f = open("text_files/numbers.txt", "r")
+# total=0
+# for x in f:
+#   total+=int(x)
+# print(total)
 
 
 
@@ -24,16 +34,56 @@
 
 ## Section B
 # 1. Ask the user to enter their name and append this to a file called 'register.txt'.
+# name = input("Enter your name: ")
+# f = open("text_files/register.txt", "a")
+# f.write(name)
 
 
 
 # 2. Create a new file called 'even.txt' that contains only the even numbers from the file 'numbers.txt'.
+# nf = open("text_files/even.txt", "x")
+# f = open("text_files/numbers.txt", "r")
+# for x in f:
+#   nf.write(x)
+
 
 
 
 # 3. 'secret.txt' contains a secret message. Each number represents the letter of the alphabet where 1 = A, 2 = B ... Z = 26. 
 #    Work out what the secret message says.
-
+# f = open("text_files/secret.txt", "r")
+# string = ""
+# alphabet = {
+#   1: "A",
+#   2: "B",
+#   3: "C",
+#   4: "D",
+#   5: "E",
+#   6: "F",
+#   7: "G",
+#   8: "H",
+#   9: "I",
+#   10: "J",
+#   11: "K",
+#   12: "L",
+#   13: "M",
+#   14: "N",
+#   15: "O",
+#   16: "P",
+#   17: "Q",
+#   18: "R",
+#   19: "S",
+#   20: "T",
+#   21: "U",
+#   22: "V",
+#   23: "W",
+#   24: "X",
+#   25: "Y",
+#   26: "Z"
+# }
+# for line in f:
+#   string+=alphabet[int(line)]
+# print(string)
 
 
 # 4. Benford’s law states that the leading digits in a collection of data are probably going to be small. 
